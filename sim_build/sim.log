@@ -1,0 +1,70 @@
+Reading pref.tcl
+
+# 10.5b
+
+# do sim_build/runsim.do
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap -c 
+# ** Warning: vmap will not overwrite local modelsim.ini.
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work sim_build/work 
+# Modifying modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:42:26 on Jun 08,2023
+# vlog -work work "+define+COCOTB_SIM" -sv -timescale 1ns/1ps -mfcu "+acc" /home/hakam/Desktop/cocotb_test/my_design.sv 
+# -- Compiling module cache_memory
+# -- Compiling module my_design
+# 
+# Top level modules:
+# 	my_design
+# End time: 02:42:26 on Jun 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -quiet -L /home/hakam/intelFPGA/19.1/modelsim_ase/altera/verilog/altera_mf -pli "/home/hakam/.pyenv/versions/3.11.3/lib/python3.11/site-packages/cocotb/libs/libcocotbvpi_modelsim.so" sim_build/work.my_design 
+# Start time: 02:42:26 on Jun 08,2023
+# ** Warning: (vsim-3015) /home/hakam/Desktop/cocotb_test/my_design.sv(22): [PCDPC] - Port size (10) does not match connection size (32) for port 'rdaddress'. The port definition is at: cache_memory.v(48).
+#    Time: 0 ps  Iteration: 0  Instance: /my_design/cache_memory File: cache_memory.v
+# ** Warning: (vsim-3015) /home/hakam/Desktop/cocotb_test/my_design.sv(22): [PCDPC] - Port size (10) does not match connection size (32) for port 'wraddress'. The port definition is at: cache_memory.v(49).
+#    Time: 0 ps  Iteration: 0  Instance: /my_design/cache_memory File: cache_memory.v
+#      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:76   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+#      -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /home/hakam/.pyenv/versions/3.11.3/lib/python3.11/site-packages/cocotb/libs/libcocotbvpi_modelsim.so : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /home/hakam/.pyenv/versions/3.11.3/lib/python3.11/site-packages/cocotb/libs/libgpi.so : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /home/hakam/.pyenv/versions/3.11.3/lib/python3.11/site-packages/cocotb/libs/libgpilog.so : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /home/hakam/.pyenv/versions/3.11.3/lib/python3.11/site-packages/cocotb/libs/libcocotbutils.so : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /home/hakam/.pyenv/versions/3.11.3/lib/python3.11/site-packages/cocotb/libs/libembed.so : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /home/hakam/.pyenv/versions/3.11.3/lib/libpython3.11.so.1.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /home/hakam/.pyenv/versions/3.11.3/lib/python3.11/site-packages/cocotb/libs/libcocotb.so : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /home/hakam/.pyenv/versions/3.11.3/lib/python3.11/site-packages/cocotb/libs/libpygpilog.so : module was loaded at an absolute address.
+#      0.00ns INFO     cocotb                             Running on ModelSim - INTEL FPGA STARTER EDITION version 10.5b 2016.10
+#      0.00ns INFO     cocotb                             Running tests with cocotb v1.7.2 from /home/hakam/.pyenv/versions/3.11.3/lib/python3.11/site-packages/cocotb
+#      0.00ns INFO     cocotb                             Seeding Python random module with 1686206546
+#      0.00ns INFO     cocotb.regression                  Found test test_my_design.my_second_test
+#      0.00ns INFO     cocotb.regression                  running my_second_test (1/1)
+#                                                           Try accessing the design.
+# ** Warning: (vsim-3534) [FOFIR] - Failed to open file "cache_init.mif" for reading.
+# No such file or directory. (errno = ENOENT)    : /build/swbuild/SJ/nightly/19.1std/670/l64/work/modelsim/eda/sim_lib/altera_mf.v(264)
+#    Time: 0 ps  Iteration: 0  Instance: /my_design/cache_memory/altsyncram_component/m_default/altsyncram_inst
+# ERROR: cannot read cache_init.mif.
+# ** Warning: (vsim-7) Failed to open readmem file "cache_init.ver" in read mode.
+# No such file or directory. (errno = ENOENT)    : /build/swbuild/SJ/nightly/19.1std/670/l64/work/modelsim/eda/sim_lib/altera_mf.v(48963)
+#    Time: 0 ps  Iteration: 0  Instance: /my_design/cache_memory/altsyncram_component/m_default/altsyncram_inst
+#     19.00ns INFO     cocotb.regression                  my_second_test passed
+#     19.00ns INFO     cocotb.regression                  ***************************************************************************************
+#                                                         ** TEST                           STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+#                                                         ***************************************************************************************
+#                                                         ** test_my_design.my_second_test   PASS          19.00           0.01       1717.07  **
+#                                                         ***************************************************************************************
+#                                                         ** TESTS=1 PASS=1 FAIL=0 SKIP=0                  19.00           0.13        151.42  **
+#                                                         ***************************************************************************************
+#                                                         
+# ** Note: $finish    : /build/swbuild/SJ/nightly/19.1std/670/l64/work/modelsim/eda/sim_lib/altera_mf.v(49944)
+#    Time: 19001 ps  Iteration: 0  Instance: /my_design
+# End time: 02:42:26 on Jun 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 19

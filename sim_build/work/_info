@@ -1,0 +1,60 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/hakam/Desktop/cocotb_test
+vcache_memory
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1686206546
+!i10b 1
+!s100 hhmYa?Wc8nf<Y28Y>m2G^1
+ImWHV_=V1<Njanc<cRCTko1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 !s105 my_design_sv_unit
+S1
+R0
+w1686205415
+8cache_memory.v
+Fcache_memory.v
+L0 40
+Z5 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z6 !s108 1686206546.000000
+Z7 !s107 cache_memory.v|/home/hakam/Desktop/cocotb_test/my_design.sv|
+Z8 !s90 -work|work|+define+COCOTB_SIM|-sv|-timescale|1ns/1ps|-mfcu|+acc|/home/hakam/Desktop/cocotb_test/my_design.sv|
+!i113 1
+Z9 o-work work -sv -timescale 1ns/1ps -mfcu +acc
+Z10 !s92 -work work +define+COCOTB_SIM -sv -timescale 1ns/1ps -mfcu +acc
+Z11 tCvgOpt 0
+vmy_design
+R1
+R2
+!i10b 1
+!s100 @GzLF=mREgO4@TgMMoc8A1
+Ic9jj<l0[<gD>dTP2XjKTM0
+R3
+R4
+S1
+R0
+w1686206327
+8/home/hakam/Desktop/cocotb_test/my_design.sv
+F/home/hakam/Desktop/cocotb_test/my_design.sv
+L0 6
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 1
+R9
+R10
+R11
